@@ -9,9 +9,8 @@ import build_record as br
 # ***********************************************************
 
 
-def main_program():
-    with open('gcse_scores.csv') as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=',')
+with open('gcse_scores.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
     header = 1
 
     for line_array in csv_reader:
@@ -20,10 +19,6 @@ def main_program():
 
         if build_record != "":
             print(build_record)
-
-
-if __name__ == "__main__":
-    main_program()
 
 
 
