@@ -1,5 +1,5 @@
 import csv
-import math
+import build_record as br
 
 # ***********************************************************
 # Build the record so that it adds up all the marks and
@@ -9,31 +9,17 @@ import math
 # ***********************************************************
 
 
-def add_scores(maths, english, science, french, history):
-    total_score = maths + english + science + french + history
-    return total_score
-
-
 with open('exam_results.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     header = 1
 
     for line_array in csv_reader:
-        build_record = ""
-
-        if header > 1:
-            name = line_array[0]
-            maths = int(line_array[1])
-            english = int(line_array[2])
-            science = int(line_array[3])
-            french = int(line_array[4])
-            history = int(line_array[5])
-
-            scores = add_scores(maths, english, science, french, history)
-            build_record += name + " - Score: " + str(scores)
-
+        build_record = br.do_build_record(line_array, header)
         header += 1
-        print(build_record)
+
+        if build_record != "":
+            print(build_record)
+
 
 
 
