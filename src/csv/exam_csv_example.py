@@ -9,7 +9,7 @@ import build_record as br
 # ***********************************************************
 
 
-with open('exam_results.csv') as csv_file:
+with open('gcse_scores.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     header = 1
 
