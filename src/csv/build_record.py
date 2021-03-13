@@ -8,10 +8,11 @@ def average_scores(maths, english, science, french, history):
     return average_score
 
 
-def do_build_record(line_array, header):
+def do_build_record(line_array, current_position):
     build_record = ""
 
-    if header > 1:
+    # only process when we are NOT at the header which is line 1
+    if current_position > 1:
         name = line_array[0]
         maths = int(line_array[1])
         english = int(line_array[2])

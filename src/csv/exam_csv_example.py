@@ -11,14 +11,18 @@ import build_record as br
 
 with open('gcse_scores.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
-    header = 1
+    # what is our current position
+    current_position = 1
 
     for line_array in csv_reader:
-        build_record = br.do_build_record(line_array, header)
-        header += 1
+        build_record = br.do_build_record(line_array, current_position)
 
         if build_record != "":
             print(build_record)
+
+        # move (or increment) the position to the next line
+        current_position += 1
+
 
 
 
