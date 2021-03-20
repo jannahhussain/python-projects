@@ -4,12 +4,12 @@ import math
 def area_of_circle(radius):
     # area of circle  pi  * radius squared
     area = math.pi * (radius * radius)
-    return area
+    return round(area, 2)
 
 
 def circ_of_circle(radius):
     circ = 2 * math.pi * radius
-    return circ
+    return round(circ, 2)
 
 
 def do_build_data(current_position, line_array):
