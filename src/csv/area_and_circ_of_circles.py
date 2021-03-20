@@ -13,4 +13,4 @@ with open('radius_of_circles.csv') as circles_file:
         if build_data != "":
             print(build_data)
 
-            current_position += 1
+        current_position += 1
