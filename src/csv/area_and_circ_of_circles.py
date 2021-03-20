@@ -8,7 +8,7 @@ with open('radius_of_circles.csv') as circles_file:
     current_position = 1
 
     for line_array in csv_reader:
-        build_data = acc.do_build_data(line_array, current_position)
+        build_data = acc.do_build_data(current_position, line_array)
 
         if build_data != "":
             print(build_data)
