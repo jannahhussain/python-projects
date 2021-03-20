@@ -2,7 +2,8 @@ import math
 
 
 def area_of_circle(radius):
-    area = (math.pi * radius) * (math.pi * radius)
+    # area of circle  pi  * radius squared
+    area = math.pi * (radius * radius)
     return area
 
 
@@ -25,3 +26,7 @@ def do_build_data(current_position, line_array):
         build_data += name + area + str(circle_area) + circumference + str(circle_circ)
 
     return build_data
+
+
+
+
