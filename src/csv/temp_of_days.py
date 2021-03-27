@@ -8,6 +8,10 @@ with open('days_and_temp.csv') as temp_file:
     header = 1
     for line_array in csv_reader:
         build_data = tc.do_build_record(line_array, current_position, header)
-        print(build_data)
+        if build_data == None:
+            print("blank space")
+        else:
+            print(build_data)
+
 
         current_position += 1
