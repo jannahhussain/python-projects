@@ -8,4 +8,3 @@ def do_build_record(line_array, current_position, header):
     if current_position > 1:
         return line_array
 
-
