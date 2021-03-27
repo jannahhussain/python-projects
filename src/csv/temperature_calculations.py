@@ -4,7 +4,7 @@ def temperature(morning, afternoon, evening, night):
     return highest and lowest
 
 
-def do_build_record(line_array, current_position, header):
+def do_build_record(line_array, current_position):
     if current_position > 1:
         return line_array
 
