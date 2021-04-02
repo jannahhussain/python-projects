@@ -17,7 +17,6 @@ def do_build_data(line_array, current_position):
         highest = max(morning, afternoon, evening, night)
         lowest = min(morning, afternoon, evening, night)
 
-        space = " "
-        build_data += day + space + str(highest) + space + str(lowest)
+        build_data += day + ": highest temp = " + str(highest) + ", lowest temp = " + str(lowest)
 
         return build_data
