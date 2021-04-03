@@ -1,4 +1,4 @@
-def do_build_data(line_array, current_position):
+def do_build_data(line_array, current_position, header):
     build_data = ""
 
     if current_position > 1:
@@ -9,8 +9,15 @@ def do_build_data(line_array, current_position):
         night = int(line_array[4])
 
         highest = max(morning, afternoon, evening, night)
-        lowest = min(morning, afternoon, evening, night)
+        position = line_array.index(str(highest))
+        highest_period = header[position]
 
-        build_data += day + ": highest temp = " + str(highest) + ", lowest temp = " + str(lowest)
+        lowest = min(morning, afternoon, evening, night)
+        position = line_array.index(str(lowest))
+        lowest_period = header[position]
+
+        build_data += day + ": highest temp = " + str(highest) + " the period is: " + highest_period + \
+                      ", lowest temp = " + str(lowest) + " the period is: " + lowest_period
 
         return build_data
+
