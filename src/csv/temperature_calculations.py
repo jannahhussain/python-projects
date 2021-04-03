@@ -1,7 +1,6 @@
 def do_build_data(line_array, current_position, header):
     build_data = ""
 
-
     if current_position > 1:
         day = line_array[0]
         morning = int(line_array[1])
