@@ -22,9 +22,10 @@ def do_build_data(line_array, current_position, header):
 
         return build_data
 
+
 def get_highest_period(highest, line_array, header):
     pass
 
+
 def get_lowest_period(lowest, line_array, header):
     pass
-
