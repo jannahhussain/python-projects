@@ -28,6 +28,3 @@ with open('gcse_scores.csv') as csv_file:
 
 
 
-
-
-
