@@ -2,13 +2,16 @@
 
 from src.oop.person import Person
 
-person = Person("Jannah", "Hussain")
+person1 = Person("Jannah", "Hussain")
+person2 = Person("Rumaisah", "Hussain")
+person3 = Person("Aboodi", "Hussain")
+person4 = Person("Dad", "Hussain")
 
-print(person.get_first_name())
+print(person1.get_first_name())
 
-person.set_first_name("Bill")
+person1.set_first_name("Bill")
 
-print(person.get_first_name())
+print(person1.get_first_name())
 
 
 
