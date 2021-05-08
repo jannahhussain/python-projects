@@ -7,6 +7,7 @@
     This is by design because we are not allowed to directly change the state
 
 """
+import datetime as dt
 
 
 class Person:
@@ -63,11 +64,7 @@ class Person:
         return self._address
 
     def get_age(self):
-        '''
-        we only need get age as we have to derive it
-        :return: 
-        '''
-        pass
-
-
-
+        born_date = dt.datetime.strptime(self._dob, '%Y-%m-%d')
+        todays_date = dt.date.today()
+        age = todays_date.year - born_date.year - ((todays_date.month, todays_date.day) < (born_date.month, born_date.day))
+        return age
