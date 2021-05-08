@@ -13,10 +13,10 @@ person2.set_dob("2011-03-14")
 person3.set_dob("2014-04-27")
 person4.set_dob("1973-01-04")
 
-people = [person1, person2, person3, person4]
+people_list = [person1, person2, person3, person4]
 
 """ here we are applying the behaviours of the person objects """
-for person in people:
+for person in people_list:
     print(person.get_first_name())
     print(person.get_lastname_name())
     print(person.get_age())
