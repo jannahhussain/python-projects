@@ -1,0 +1,51 @@
+[
+  {
+    "day": "monday",
+    "morning": 5,
+    "afternoon": 11,
+    "evening": 10,
+    "night": 0
+  },
+  {
+    "day": "tuesday",
+    "morning": 2,
+    "afternoon": 7,
+    "evening": 8,
+    "night": 4
+  },
+  {
+    "day": "wednesday",
+    "morning": 3,
+    "afternoon": 6,
+    "evening": 5,
+    "night": 1
+  },
+  {
+    "day": "thursday",
+    "morning": 2,
+    "afternoon": 5,
+    "evening": 8,
+    "night": 6
+  },
+  {
+    "day": "friday",
+    "morning": 0,
+    "afternoon": 4,
+    "evening": 2,
+    "night": 3
+  },
+  {
+    "day": "saturday",
+    "morning": 4,
+    "afternoon": 7,
+    "evening": 6,
+    "night": 8
+  },
+  {
+    "day": "sunday",
+    "morning": 9,
+    "afternoon": 10,
+    "evening": 8,
+    "night": 7
+  }
+]
